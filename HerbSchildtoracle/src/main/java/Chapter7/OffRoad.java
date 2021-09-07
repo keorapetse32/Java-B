@@ -9,8 +9,8 @@ package Chapter7;
  *
  * @author keora
  */
-public class OffRoad extends Vehicle {
-    private int groundClearance; // ground clearance in inches 
+//public class OffRoad extends Vehicle {
+    //private int groundClearance; // ground clearance in inches 
  
   // ...
-}
+//}

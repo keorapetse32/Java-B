@@ -9,8 +9,8 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    A() {  
-    System.out.println("Constructing A."); 
+public class OrderOfConstruction {
+    public static void main(String args[]) {
+    C c = new C(); 
   }
 }
