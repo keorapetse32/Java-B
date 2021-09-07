@@ -11,8 +11,7 @@ package Chapter7;
  */
 public class Rectangle extends TwoDShape {
     boolean isSquare() { 
-    if(width == height) return true; 
-    return false; 
+    return width == height; 
   } 
    
   double area() { 
