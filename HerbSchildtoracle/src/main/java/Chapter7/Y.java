@@ -9,14 +9,11 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    int i, j;
-    A(int a,  int b) {
-    i = a;
-    j = b;
- }
+public class Y extends X {
+    int b;
     
-    void show() {
-        System.out.println("i and j" + i + "" + j);
-    }
+    Y(int i, int j) {
+    super(j);
+    b = i;
+ }
 }

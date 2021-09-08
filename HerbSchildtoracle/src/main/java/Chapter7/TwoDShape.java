@@ -10,8 +10,8 @@ package Chapter7;
  * @author keora
  */
 public class TwoDShape {
-  private double width; 
-  private double height; 
+  double width; 
+  double height; 
  
   // A default constructor. 
   TwoDShape() { 
@@ -27,6 +27,12 @@ public class TwoDShape {
   // Construct object with equal width and height. 
   TwoDShape(double x) { 
     width = height = x; 
+  } 
+ 
+  // Construct an object from an object. 
+  TwoDShape(TwoDShape ob) { 
+    width = ob.width; 
+    height = ob.height; 
   } 
  
   // Accessor methods for width and height. 

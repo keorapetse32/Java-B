@@ -9,14 +9,14 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    int i, j;
-    A(int a,  int b) {
-    i = a;
-    j = b;
- }
-    
-    void show() {
-        System.out.println("i and j" + i + "" + j);
+public class IncompatibleRef {
+    public static void main(String[] args) {
+        X x = new X(10);
+        X x2;
+        Y y = new Y(5);
+        
+        x2 = x;
+        
+       
     }
 }

@@ -9,14 +9,9 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    int i, j;
-    A(int a,  int b) {
-    i = a;
-    j = b;
- }
-    
-    void show() {
-        System.out.println("i and j" + i + "" + j);
+public class Override {
+    public static void main(String[] args) {
+        B subOb = new B(1, 2, 3);
+        subOb.show();
     }
 }
