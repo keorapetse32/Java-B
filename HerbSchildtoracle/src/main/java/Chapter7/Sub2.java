@@ -9,8 +9,8 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    final void meth() { 
-    System.out.println("This is a final method."); 
+public class Sub2 extends Sup {
+    void who() { 
+    System.out.println("who() in Sub2"); 
   }
 }

@@ -9,8 +9,6 @@ package Chapter7;
  *
  * @author keora
  */
-public class A {
-    final void meth() { 
-    System.out.println("This is a final method."); 
-  }
+public class FinalD {
+    
 }
