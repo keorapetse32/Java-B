@@ -20,4 +20,10 @@ public class SupSubRef {
         
         x2.a = 19;
     }
+
+    private static class y extends Y {
+
+        public y(int i, int i0) {
+        }
+    }
 }
