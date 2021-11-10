@@ -10,15 +10,15 @@ package Car;
  * @author keora
  */
 public class Motorcycle {
-    private int passengers;//seats
+   // private final int passengers;//seats
 	
-	public void showMotorcycle() {
-		super.showInfo();
-                    System.out.println("Passengers:"+passengers);
-	}
+	//public void showMotorcycle() {
+		//super.showInfo();
+                //    System.out.println("Passengers:"+passengers);
+	//}
  
-	public Motorcycle(String brand, String color, int passengers) {
-		super(brand, color);
-		this.passengers = passengers;
-	}
+	//public Motorcycle(String brand, String color, int passengers) {
+		//super(brand, color);
+		//this.passengers = passengers;
+	//}
 }

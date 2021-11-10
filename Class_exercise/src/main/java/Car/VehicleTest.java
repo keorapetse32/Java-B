@@ -16,7 +16,7 @@ public class VehicleTest {
 		System.out.println();
 		 Truck t = new Truck("Wuling God Car", "Black",3500);
 		t.showTUuck();
-                Motorcycle m = new Motorcycle("suzuki", "Red", 2);
-		m.showMotorcycle();
+               // Motorcycle m = new Motorcycle("suzuki", "Red", 2);
+		//m.showMotorcycle();
 	}
 }
