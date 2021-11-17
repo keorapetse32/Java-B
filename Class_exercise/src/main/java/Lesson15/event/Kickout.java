@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package soccer.event;
+package Lesson15.event;
 
-import soccer.util.Settings;
+import Lesson15.util.Settings;
 
 /**
  *

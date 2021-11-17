@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package soccer.play;
+package Lesson15.play;
 
-import soccer.event.GameEvent;
-import soccer.event.Goal;
+import Lesson15.event.GameEvent;
+import Lesson15.event.Goal;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
-import soccer.util.PlayerDatabase;
-import soccer.util.PlayerDatabaseException;
-import soccer.util.Settings;
+import Lesson15.util.PlayerDatabase;
+import Lesson15.util.PlayerDatabaseException;
+import Lesson15.util.Settings;
 
 /**
  *

@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package soccer.event;
+package Lesson15.event;
 
-import soccer.play.Player;
-import soccer.play.Team;
+import Lesson15.play.Player;
+import Lesson15.play.Team;
 
 /**
  *

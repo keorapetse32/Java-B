@@ -4,16 +4,16 @@
  * and open the template in the editor.
  */
 
-package soccer.play;
+package Lesson15.play;
 
-import soccer.event.Kickoff;
-import soccer.event.GameEvent;
+import Lesson15.event.Kickoff;
+import Lesson15.event.GameEvent;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import soccer.util.Settings;
+import Lesson15.util.Settings;
 
 
 /**
