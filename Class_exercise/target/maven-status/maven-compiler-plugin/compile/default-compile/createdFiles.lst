@@ -12,6 +12,7 @@ Lesson13\Practice2\soccer\Team.class
 Lesson6\Practice2\Game.class
 Soccer\GameEvent.class
 Lesson15\event\Shoot.class
+Lesson13\Practice3\soccer\Possession.class
 Lesson13\Practice2\soccer\Player.class
 Lesson14\soccer\GameEvent.class
 Car\Car.class
@@ -21,6 +22,7 @@ Lesson6\Practice1\Team.class
 Lesson12\Shirt.class
 Lesson6\Practice2\Team.class
 Lesson13\Practice1\soccer\Team.class
+Lesson13\Practice3\soccer\League.class
 Lesson13\Practice2\utility\PlayerDatabase.class
 Lesson3\ShoppingCart.class
 Lesson6\Item.class
@@ -36,6 +38,7 @@ Lesson11\Item.class
 Soccer\event\GameEvent.class
 Lesson11\Exercise11_2.class
 Soccer\util\PlayerDatabaseException.class
+Lesson13\Practice3\soccer\Goal.class
 Lesson13\Practice2\soccer\Possession.class
 Lesson9\Customer.class
 Lesson13\Practice1\soccer\Game.class
@@ -45,8 +48,10 @@ Lesson15\play\DisplayString.class
 Soccer\play\DisplayString.class
 utility\PlayerDatabaseException.class
 Lesson13\Practice1\soccer\Goal.class
+Lesson13\Practice3\utility\PlayerDatabase.class
 Lesson6\Practice1\League.class
 Lesson11\Exercise11_1.class
+Lesson13\Practice3\soccer\Game.class
 Lesson15\util\PlayerDatabase.class
 Lesson15\event\Kickout.class
 Soccer\event\Kickout.class
@@ -97,6 +102,7 @@ Car\VehicleTest.class
 Lesson13\Practice2\soccer\GameEvent.class
 Lesson14\ShoppingCart.class
 Lesson10\Order.class
+Lesson13\Practice3\soccer\Player.class
 Car\Motorcycle.class
 Lesson14\soccer\Player.class
 Soccer\event\Kickoff.class
@@ -107,6 +113,7 @@ Lesson15\play\Game.class
 Lesson13\Practice2\soccer\Goal.class
 Lesson13\Practice2\soccer\League.class
 Lesson15\event\ReceivePass.class
+Lesson13\Practice3\soccer\Team.class
 Lesson13\Trousers.class
 Lesson4\Exercise4_1.class
 Lesson6\Practice2\League.class
@@ -114,6 +121,7 @@ Lesson14\utility\PlayerDatabase.class
 Soccer\event\Shoot.class
 Lesson15\play\GameResult.class
 Lesson5\Exercise5_3.class
+Lesson13\Practice3\soccer\GameEvent.class
 Lesson6\Practice1\Goal.class
 Lesson13\Practice2\soccer\Game.class
 Soccer\util\Settings.class
