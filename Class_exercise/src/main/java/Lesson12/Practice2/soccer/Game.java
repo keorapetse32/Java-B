@@ -1,77 +1,68 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Lesson12.Practice1.soccer;
+package Lesson12.Practice2.soccer;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-/**
- *
- * @author keora
- */
 public class Game {
-     private Team homeTeam;
+    private Team homeTeam;
     private Team awayTeam;
-    private Goal[] goals;
+    private GameEvent[] goals;
     private LocalDateTime theDateTime;
-    
+
     public Game(Team homeTeam, Team awayTeam, LocalDateTime theDateTime) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.theDateTime = theDateTime;
     }
-    
+
     public void playGame() {
-        ArrayList <Goal> eventList = new ArrayList();
-        Goal currEvent;
+        ArrayList <GameEvent> eventList = new ArrayList();
+        GameEvent currEvent;
         for (int i = 1; i <=90; i++){
-            
+
             if (Math.random() > 0.95){
-                currEvent = new Goal();
-                currEvent.setTheTeam(Math.random() > 0.5?homeTeam: awayTeam);
+                currEvent = Math.random() > 0.6?new Goal():new Possession();
+                currEvent.setTheTeam(Math.random() > 0.3?homeTeam: awayTeam);
                 currEvent.setThePlayer(currEvent.getTheTeam().
-                getPlayerArray()[(int)(Math.random() * currEvent.getTheTeam().getPlayerArray().length)]);
+                        getPlayerArray()[(int)(Math.random() * currEvent.getTheTeam().getPlayerArray().length)]);
                 currEvent.setTheTime(i);
                 eventList.add(currEvent);
                 //System.out.println(i);
             }
-            this.goals = new Goal[eventList.size()];
+            this.goals = new GameEvent[eventList.size()];
             eventList.toArray(goals);
- 
+
         }
     }
-    
+
     public String getDescription() {
-                       
+
         int homeTeamGoals = 0;
         int awayTeamGoals = 0;
         StringBuilder returnString = new StringBuilder();
-        
+
         returnString.append(this.getHomeTeam().getTeamName() + " vs. " +
-        this.getAwayTeam().getTeamName() + "\n" + 
-               "Date: " + this.getTheDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
-         
-        for (Goal currGoal: this.getGoals()) {
-            
-            if (currGoal.getTheTeam()== homeTeam) {
+                this.getAwayTeam().getTeamName() + "\n" +
+                "Date: " + this.getTheDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
+
+        for (GameEvent currEvent: this.getEvents()) {
+
+            if (currEvent.getTheTeam()== homeTeam) {
                 homeTeamGoals++;
                 homeTeam.incGoalsTotal(1);
             } else {
                 awayTeamGoals++;
                 awayTeam.incGoalsTotal(1);
             }
-            
-            returnString.append("Goal scored after "
-            + currGoal.getTheTime() + " mins by "
-            + currGoal.getThePlayer().getPlayerName() + " of "
-            + currGoal.getTheTeam().getTeamName() +
-              "\n");
+
+            returnString.append(currEvent +" after "
+                    + currEvent.getTheTime() + " mins by "
+                    + currEvent.getThePlayer().getPlayerName() + " of "
+                    + currEvent.getTheTeam().getTeamName() +
+                    "\n");
         }
-        
+
         if (homeTeamGoals == awayTeamGoals) {
             returnString.append("It's a draw!");
             this.homeTeam.incPointsTotal(1);
@@ -84,7 +75,7 @@ public class Game {
             this.awayTeam.incPointsTotal(1);
         }
         returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") \n");
-        
+
         return returnString.toString();
     }
 
@@ -119,14 +110,14 @@ public class Game {
     /**
      * @return the goals
      */
-    public Goal[] getGoals() {
+    public GameEvent[] getEvents() {
         return goals;
     }
 
     /**
      * @param goals the goals to set
      */
-    public void setGoals(Goal[] goals) {
+    public void setEvents(GameEvent[] goals) {
         this.goals = goals;
     }
 
