@@ -1,15 +1,20 @@
-package Lesson11.Practice1.soccer;
+package Lesson11.Practice2.soccer;
 
-import Lesson11.Practice1.utility.GameUtils;
+import Lesson11.Practice2.utility.GameUtils;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Game {
     private Team homeTeam;
     private Team awayTeam;
     private Goal[] goals;
+    private LocalDateTime theDateTime;
 
-    public Game(Team homeTeam, Team awayTeam) {
+    public Game(Team homeTeam, Team awayTeam, LocalDateTime theDateTime) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
+        this.theDateTime = theDateTime;
     }
 
     public void playGame(int maxGoals) {
@@ -30,7 +35,8 @@ public class Game {
         StringBuilder returnString = new StringBuilder();
 
         returnString.append(this.getHomeTeam().getTeamName() + " vs. " +
-                this.getAwayTeam().getTeamName() + "\n");
+                this.getAwayTeam().getTeamName() + "\n" +
+                "Date: " + this.getTheDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
 
         for (Goal currGoal: this.getGoals()) {
 
@@ -107,4 +113,31 @@ public class Game {
         this.goals = goals;
     }
 
+    /**
+     * @return the localDateTime
+     */
+    public LocalDateTime getLocalDateTime() {
+        return getTheDateTime();
+    }
+
+    /**
+     * @param theDateTime the localDateTime to set
+     */
+    public void setLocalDateTime(LocalDateTime theDateTime) {
+        this.setTheDateTime(theDateTime);
+    }
+
+    /**
+     * @return the theDateTime
+     */
+    public LocalDateTime getTheDateTime() {
+        return theDateTime;
+    }
+
+    /**
+     * @param theDateTime the theDateTime to set
+     */
+    public void setTheDateTime(LocalDateTime theDateTime) {
+        this.theDateTime = theDateTime;
+    }
 }

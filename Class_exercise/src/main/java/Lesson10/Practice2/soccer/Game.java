@@ -1,6 +1,6 @@
-package Lesson11.Practice1.soccer;
+package Lesson10.Practice2.soccer;
 
-import Lesson11.Practice1.utility.GameUtils;
+import Lesson10.Practice2.utility.GameUtils;
 
 public class Game {
     private Team homeTeam;
@@ -29,8 +29,8 @@ public class Game {
         int awayTeamGoals = 0;
         StringBuilder returnString = new StringBuilder();
 
-        returnString.append(this.getHomeTeam().getTeamName() + " vs. " +
-                this.getAwayTeam().getTeamName() + "\n");
+        returnString.append(homeTeam.getTeamName() + " vs. " +
+                awayTeam.getTeamName() + "\n");
 
         for (Goal currGoal: this.getGoals()) {
 
@@ -51,14 +51,14 @@ public class Game {
 
         if (homeTeamGoals == awayTeamGoals) {
             returnString.append("It's a draw!");
-            this.homeTeam.incPointsTotal(1);
-            this.awayTeam.incPointsTotal(1);
+            homeTeam.incPointsTotal(1);
+            awayTeam.incPointsTotal(1);
         } else if (homeTeamGoals > awayTeamGoals) {
             returnString.append(homeTeam.getTeamName() + " win");
-            this.homeTeam.incPointsTotal(1);
+            homeTeam.incPointsTotal(2);
         } else {
             returnString.append(awayTeam.getTeamName() + " win");
-            this.awayTeam.incPointsTotal(1);
+            awayTeam.incPointsTotal(2);
         }
         returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") \n");
 
@@ -106,5 +106,4 @@ public class Game {
     public void setGoals(Goal[] goals) {
         this.goals = goals;
     }
-
 }
