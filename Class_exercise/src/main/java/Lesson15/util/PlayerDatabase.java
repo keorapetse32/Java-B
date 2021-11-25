@@ -6,15 +6,14 @@
 
 package Lesson15.util;
 
-import java.util.*;
 import Lesson15.play.Player;
 
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 
-/**
- *
- * @author Administrator
- */
+
+
 public class PlayerDatabase {
     
     private ArrayList <Player> players;

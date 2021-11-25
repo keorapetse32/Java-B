@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Lesson8.Practice2.soccer;
 
 import Lesson8.Practice2.utility.GameUtils;
 
-/**
- *
- * @author Administrator
- */
+
 public class Game {
     
     public Team homeTeam;

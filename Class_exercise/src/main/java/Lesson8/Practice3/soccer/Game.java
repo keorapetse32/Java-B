@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Lesson8.Practice3.soccer;
 
 import Lesson8.Practice3.utility.GameUtils;
 
-/**
- *
- * @author Administrator
- */
+
 public class Game {
     
     public Team homeTeam;
@@ -19,7 +10,6 @@ public class Game {
     public Goal[] goals;
     
     public void playGame(int maxGoals) {
-        /* Practice 8-2. Add code to initialize the array currGame.goals to a random size */
         int numberOfGoals = (int)(Math.random() * maxGoals + 1);
         Goal[] theGoals = new Goal[numberOfGoals];
         this.goals = theGoals;

@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Lesson15.play;
 
-/**
- *
- * @author Administrator
- */
+
 public class Player implements Comparable {
     
     private String playerName;
@@ -25,30 +16,22 @@ public class Player implements Comparable {
     
     public Player() {}
 
-    /**
-     * @return the playerName
-     */
+
     public String getPlayerName() {
         return playerName;
     }
 
-    /**
-     * @param playerName the playerName to set
-     */
+
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
 
-    /**
-     * @return the goalsScored
-     */
+
     public int getGoalsScored() {
         return goalsScored;
     }
 
-    /**
-     * @param goalsScored the goalsScored to set
-     */
+
     public void setGoalsScored(int goalsScored) {
         this.goalsScored = goalsScored;
     }
@@ -56,8 +39,7 @@ public class Player implements Comparable {
     
     
     
-    // TODO - possibly remove this so can sort based on Lambda expression
-    // If so, need to use 1.8 Java for GlassFish
+
     public int compareTo(Object thePlayer){
 
         if (this.getGoalsScored() < ((Player)thePlayer).getGoalsScored()){

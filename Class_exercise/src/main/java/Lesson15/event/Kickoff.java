@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Lesson15.event;
 
-/**
- *
- * @author ksomervi
- */
-public class Kickoff extends GameEvent {  // Really it's a special Pass
+
+public class Kickoff extends GameEvent {
     
     public Kickoff() {
 
@@ -33,9 +24,8 @@ public class Kickoff extends GameEvent {  // Really it's a special Pass
         return true;
     }
     
-        // Little bit of a hack maybe as ballPos not used.
+
     public void setBallPos(int ballPos) {
-       //super.setBallPos(50);
        super.ballPos = 50;
     }
     

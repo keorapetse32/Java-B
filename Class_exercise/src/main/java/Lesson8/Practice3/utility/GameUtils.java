@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Lesson8.Practice3.utility;
 
 import Lesson8.Practice3.soccer.Game;
@@ -14,22 +9,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-/**
- *
- * @author ksomervi
- */
+
 public class GameUtils {
 
     public static void addGameGoals(Game currGame) {
-        
-        //System.out.println(currGame.awayTeam + " : " + currGame.homeTeam);
-
-        // Or possibly throw an Exception?
         if (currGame.goals == null) {
             currGame.goals = new Goal[(int) (Math.random() * 10)];   // If goals not initialized max will be 9
         }
-
-        //System.out.println(currGame.goals.length);
         int i = 0;
         for (Goal currGoal : currGame.goals) {
             currGoal = new Goal();
@@ -43,7 +29,7 @@ public class GameUtils {
 
     }
 
-    // Uses reflection so works with getter method or public field
+
     private static Team getHomeTeam(Game currGame, String homeOrAway) {
         Team theTeam = null;
         Method m;
@@ -51,7 +37,6 @@ public class GameUtils {
         try {
             m = Game.class.getMethod("get" + Character.toUpperCase(homeOrAway.charAt(0)) + homeOrAway.substring(1) + "Team");
             theTeam = (Team)m.invoke(currGame);
-            //System.out.println(theTeam);
         } catch (NoSuchMethodException|IllegalAccessException|InvocationTargetException em) {
             try {
                 f = Game.class.getField(homeOrAway + "Team");

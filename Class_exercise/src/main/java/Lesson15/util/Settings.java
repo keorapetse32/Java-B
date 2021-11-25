@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package Lesson15.util;
 
-/**
- *
- * @author ksomervi
- */
+
 public class Settings {
     
     static public final double GAME_EVENT_FREQUENCY = 0.6;

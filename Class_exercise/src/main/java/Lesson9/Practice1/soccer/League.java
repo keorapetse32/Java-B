@@ -1,20 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Lesson9.Practice1.soccer;
 
 
-/**
- *
- * @author Administrator
- */
+
 public class League {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         
         League theLeague = new League();
@@ -44,7 +34,6 @@ public class League {
         team1.setTeamName("The Greens");
         team1.setPlayerArray(thePlayers);
 
-        // Create team2
         Team team2 = new Team();
         team2.setTeamName("The Reds");
         team2.setPlayerArray(new Player[3]);

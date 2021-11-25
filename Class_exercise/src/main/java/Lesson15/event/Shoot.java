@@ -1,21 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Lesson15.event;
 
-/**
- *
- * @author ksomervi
- */
+
 public class Shoot extends GameEvent {
-    
-    // At the simplest, if successful dribbling moves towards the other teams goal
-    public Shoot(){
+            public Shoot(){
         
-        // No change in ballPoss until next event; Goal or Kickout(save)
+
         
     }
     
@@ -36,11 +25,8 @@ public class Shoot extends GameEvent {
         return false;
     }
     
-        /**
-     * @param ballPos the ballPos to set
-     */
+
     public void setBallPos(int currBallPos) {
-        //super.setBallPos(currBallPos);
         super.ballPos = currBallPos;
 
     }
